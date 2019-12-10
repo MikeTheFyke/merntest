@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -15,8 +17,9 @@ const db = require('./config/keys').mongoURI;
 // Connect to Mongo
 mongoose
     .connect(db, { 
-        useNewUrlParser: true ,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useNewUrlParser: true,
+        useCreateIndex: true
     })
     .then(() => console.log('MongoDB Connected :)'))
     .catch(err => console.log(err));
