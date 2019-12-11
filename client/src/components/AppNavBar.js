@@ -9,6 +9,7 @@ import {
     NavLink,
     Container
 } from 'reactstrap';
+import logoMini from './images/ScrappyMini.png';
 
 class AppNavBar extends Component {
     state = {
@@ -24,14 +25,15 @@ class AppNavBar extends Component {
     render(){
         return(
             <div>
-                <Navbar className='mb-5' color='success' dark expand='md'> 
+                <Navbar className='mb-5' color='success' dark expand='lg'> 
                     <Container>
-                        <NavbarBrand href='/'>Better'er Bytes</NavbarBrand>
+                        <img src={logoMini} style={{width: '40px', height: '50px'}} margin-right="2"/>
+                        <NavbarBrand href='/'>BETTER'ER BYTES</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className='ml-auto' navbar>
                                 <NavItem>
-                                    <NavLink href="https://github.com/MikeTheFyke">
+                                    <NavLink href="https://github.com/MikeTheFyke" target="_blank">
                                         GitHub
                                     </NavLink>
                                 </NavItem>
