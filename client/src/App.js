@@ -4,6 +4,7 @@ import ShoppingList from './components/ShoppingList';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './styles/ShoppingList.css';
 
 class App extends Component {
   render() {
