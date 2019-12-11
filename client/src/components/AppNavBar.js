@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     Collapse,
     Navbar,
@@ -11,9 +11,7 @@ import {
 } from 'reactstrap';
 
 class AppNavBar extends Component {
-    constructor(props){
-    super(props);
-    this.state = {
+    state = {
         isOpen: false
     }
     toggle = () => {
@@ -21,7 +19,7 @@ class AppNavBar extends Component {
             isOpen: !this.state.isOpen
         });
     };
-}
+
     // mb-5 = margin bottom 5, expand 'sm' = hamburger on smallscreens
     render(){
         return(
