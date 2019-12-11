@@ -32,9 +32,15 @@ class AppNavBar extends Component {
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className='ml-auto' navbar>
-                                <NavItem>
-                                    <NavLink href="https://github.com/MikeTheFyke" target="_blank">
-                                        GitHub
+                                <NavItem className="d-flex justify-content-around">
+                                    <NavLink className='mr-2 float-left' href="https://www.metro.ca" target="_blank">
+                                        Metro Grocery
+                                    </NavLink>
+                                    <NavLink className='mr-2 float-left' href="https://www.nofrills.ca" target="_blank">
+                                        No Frills
+                                    </NavLink>
+                                    <NavLink className='mr-2 float-left' href="https://www.realcanadiansuperstore.ca" target="_blank">
+                                        RCSS
                                     </NavLink>
                                 </NavItem>
                             </Nav>
