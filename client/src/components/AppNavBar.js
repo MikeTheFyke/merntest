@@ -24,9 +24,9 @@ class AppNavBar extends Component {
     render(){
         return(
             <div>
-                <Navbar className='mb-5' color='dark' dark expand='md'> 
+                <Navbar className='mb-5' color='success' dark expand='md'> 
                     <Container>
-                        <NavbarBrand href='/'>Shopping List</NavbarBrand>
+                        <NavbarBrand href='/'>Better'er Bytes</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className='ml-auto' navbar>
