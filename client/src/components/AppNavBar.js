@@ -27,7 +27,7 @@ class AppNavBar extends Component {
             <div>
                 <Navbar className='mb-5' color='success' dark expand='lg'> 
                     <Container>
-                        <img src={logoMini} style={{width: '40px', height: '50px'}} margin-right="2"/>
+                        <img src={logoMini} style={{width: '40px', height: '50px'}} />
                         <NavbarBrand href='/'>BETTER'ER BYTES</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>

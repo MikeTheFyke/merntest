@@ -64,6 +64,8 @@ class ItemModal extends Component {
                                     name="name"
                                     id="item"
                                     placeholder="Add shopping item"
+                                    autocomplete="off"
+                                    outline="none"
                                     onChange={this.onChange}
                                 />
                                 <Button
