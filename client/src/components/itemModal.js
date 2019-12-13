@@ -54,7 +54,9 @@ class ItemModal extends Component {
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                     >
-                    <ModalHeader toggle={this.toggle}> Add to Shopping List</ModalHeader>
+                    <div className="d-flex justify-content-center">
+                        <ModalHeader toggle={this.toggle} > Add to Shopping List     </ModalHeader>
+                    </div>
                     <ModalBody>
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
@@ -64,8 +66,7 @@ class ItemModal extends Component {
                                     name="name"
                                     id="item"
                                     placeholder="Add shopping item"
-                                    autocomplete="off"
-                                    outline="none"
+                                    autoComplete="off"
                                     onChange={this.onChange}
                                 />
                                 <Button
